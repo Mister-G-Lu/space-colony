@@ -184,7 +184,7 @@ public class ColonyCalculator {
      *         the planet
      */
     public Planet planetByNumber(int planet) {
-        return (planet >= 1 && planet <= 3) ? planets[planet] : null;
+        return (planet > 0 && planet <= NUM_PLANETS) ? planets[planet] : null;
     }
 
 
